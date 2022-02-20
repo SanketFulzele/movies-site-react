@@ -103,12 +103,12 @@ function App() {
 
       <Header>
         <AppName>
-          <MovieImage src='/movie-icon.svg' />
+          <MovieImage  src="https://img.icons8.com/fluency/48/000000/movie.png"/>
           React Movie App
         </AppName>
 
         <SearchBox>
-          <SearchIcon src='/search-icon.svg' />
+          <SearchIcon src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-search-seo-dreamstale-lineal-dreamstale-7.png"/>
           <SearchInput placeholder='Search Movie' value={searchQuery} onChange={onTextChange} />
         </SearchBox>
       </Header>
@@ -120,7 +120,7 @@ function App() {
         { movieList?.length
           ? movieList.map((movie, index) =>
            <MovieComponent key={index} movie={movie} onMovieSelect={onMovieSelect} /> )
-          : <Placeholder src="/movie-icon.svg"/> }
+          : <Placeholder src="https://img.icons8.com/fluency/48/000000/movie.png"/> }
       </MovieListContainer>
 
     </Container>
